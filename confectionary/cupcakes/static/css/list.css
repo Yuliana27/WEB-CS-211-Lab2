@@ -1,0 +1,40 @@
+@import url(reset.css);
+
+.table {
+    height: 720px;
+    width: 100%;
+    padding-top: 25px;
+    background: url(../image/background.png) center no-repeat;
+}
+
+table {
+    border: 1px solid white;
+    color: white;
+    margin: 0 auto;
+}
+
+th {
+    font-size: 18px;
+    padding: 15px;
+    border: 1px solid white;
+}
+
+.enter_list {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 50px;
+    background-color: rgba(0, 120, 201, 0.0);
+    border: 1px solid white;
+    width: 250px;
+    border-radius: 100px;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 5%;
+    margin-right: 55%;
+}
+
+.enter_list:hover {
+    color: white;
+    border: 1.25px solid #f7bdb1;
+}
