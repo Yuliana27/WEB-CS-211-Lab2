@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confectionary</title>
+    <link rel="icon" href="{% static 'image/cake.jpg' %}" type="image/jpg">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="{% static 'scripts/script.js' %}"></script>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,600,700|Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+</head>
+
+<body>
+    <div class="intro">
+        <div class="container">
+            <div class="header__inner">
+                <div>
+                    <a href="../../index"><img src="{% static 'image/logo.png' %}" alt="" class="logo"></a>
+                </div>
+                <nav id="main__menu">
+                    <a href="#menu" class="nav__link">Меню</a>
+                    <a href="#order" class="nav__link">Як зробити замовлення?</a>
+                    <a href="#photos" class="nav__link">Фото</a>
+                    <a href="login.html" class="nav__link" id="sign_in">Вхід</a>
+                    <a href="registration.html" class="nav__link" id="sign_up">Реєстрація</a>
+                </nav>
+                <div class="burger_nav">
+                    <span id="trigger" class="trigger">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </span>
+                    <div class="left-side" id="left-side">
+                    <ul id="menub" class="menub">
+                       <li><a href="index.html" class="nav__link__burger" id="homepage">Головна сторінка</a></li>
+                        <li class="burger_items"><a href="index.html#menu" class="nav__link__burger">Меню</a></li>
+                        <li class="burger_items"><a href="index.html#photos" class="nav__link__burger">Фото</a></li>
+                        <li class="burger_items"><a href="login.html" class="nav__link__burger" id="sign_in">Вхід</a></li>
+                        <li class="burger_items"><a href="registration.html" class="nav__link__burger" id="sign_up">Реєстрація</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="introtext">
+                <h1 class="intro__name">Обери свій капкейк</h1>
+                <h2 class="intro__sname">з найсмачнішою начинкою</h2>
+                <p class="text">Капкейки — це порційні тістечка з ніжною текстурою і чудовим смаком. Наша кондитерська пропонує капкейки на замовлення для будь-яких свят і заходів. Вони виділяються серед інших солодощів незвичайним оформленням та є справжніми солодкими шедеврами.</p>
+                <div class="button1" id="button2">
+                    <form action="menu.html" >
+                    <button class="button" >Капкейки</button>
+                    </form>
+                    <img src="{% static 'image/cupcakebutton.png' %}" alt="cupcake" class="cupcakebutton">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="secondblock" id="menu">
+        <div class="container">
+            <div class="name">
+                <p class="blockname2">Всі наші <span class="pink">капкейки</span></p>
+                <p class="subtitle">начинки на будь-який смак</p>
+                <img src="{% static 'image/block2line.png' %}" alt="" class="line">
+            </div>
+            <div class="navblock2">
+                <a href="##" class="nav__button2">Фруктові</a>
+                <a href="##" class="nav__button2">Шоколадні</a>
+                <a href="##" class="nav__button2">Ванільні</a>
+                <a href="##" class="nav__button2" id="lastitem2">З топінгом</a>
+            </div>
+            <div class="slider">
+                <a href="###"><img src="{% static 'image/leftarrow.png' %}" alt="" class="left_arrow" id="left_arrow3"></a>
+                <div class="slider__item">
+                    <div class="case" id="case1">
+                        <a href="####" class="link"></a>
+                    </div>
+                    <a href="" class="link">
+                        <h4 class="namecake2" class="case"><label>Капкейк </label><span id="cupcake33" class="bold">"фруктовий"</span></h4>
+                        <p>50 грамів</p>
+                    </a>
+                </div>
+                <div class="slider__item">
+                    <div class="case" id="case2">
+                        <a href="####" class="link"></a>
+                    </div>
+                    <a href="" class="link">
+                        <h4 class="namecake2">Капкейк <span class="bold">"фруктовий"</span></h4>
+                        <p>50 грамів</p>
+                    </a>
+                </div>
+                <div class="slider__item">
+                    <div class="case" id="case3">
+                        <a href="####" class="link"></a>
+                    </div>
+                    <a href="" class="link">
+                        <h4 class="namecake2">Капкейк <span class="bold">"фруктовий"</span></h4>
+                        <p>50 грамів</p>
+                    </a>
+                </div>
+                <div class="slider__item">
+                    <div class="case" id="case4">
+                        <a href="####" class="link"></a> </div>
+                    <a href="" class="link">
+                        <h4 class="namecake2">Капкейк <span class="bold">"фруктовий"</span></h4>
+                        <p>50 грамів</p>
+                    </a>
+                </div>
+                <a href="###"><img src="{% static 'image/arrow.png' %}" alt="" class="right_arrow"></a>
+            </div>
+        </div>
+    </div>
+    <div class="thirdblock">
+        <div class="container">
+            <div class="name">
+                <p class="blockname2" id="order">Як зробити <span class="pink">замовлення?</span></p>
+                <p class="subtitle">начинки на будь-який смак</p>
+                <img src="{% static 'image/block2line.png' %}" alt="" class="line">
+            </div>
+            <div id="itemsblock3">
+                <div class="thirdblock_item">
+                    <div class="thirdblock_item_case">
+                        <div class="icon">
+                            <img src="{% static 'image/notepad.png' %}" alt="">
+                        </div>
+                        <h2 class="item_heading">Підтверджуємо замовлення</h2>
+                        <p class="item_subtitle">Приймаємо замовлення та передзвонюємо Вам для уточнення деталей</p>
+                    </div>
+                </div>
+                <div class="thirdblock_item">
+                    <div class="thirdblock_item_case">
+                        <div class="icon">
+                            <img src="{% static 'image/cupcakeitem.png' %}" alt="">
+                        </div>
+                        <h2 class="item_heading">Готуємо Ваші капкейки</h2>
+                        <p class="item_subtitle">Готуємо найсмачніші капкейки, які Ви обрали у меню</p>
+                    </div>
+                </div>
+                <div class="thirdblock_item">
+                    <div class="thirdblock_item_case">
+                        <div class="icon">
+                            <img src="{% static 'image/car.png' %}" alt="">
+                        </div>
+                        <h2 class="item_heading">Відправляємо замовлення</h2>
+                        <p class="item_subtitle">Відправляємо Ваше замовлення Новою Поштою або ж кур'єром до Вашої квартири </p>
+                    </div>
+                </div>
+                <div class="thirdblock_item">
+                    <div class="thirdblock_item_case">
+                        <div class="icon">
+                            <img src="{% static 'image/courier.png' %}" alt="">
+                        </div>
+                        <h2 class="item_heading">Отримання замовлення</h2>
+                        <p class="item_subtitle">Ви отримаєте смс-сповіщення на телефон або кур'єр зателефонує Вам</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fourthblock" id="photos">
+        <div class="container">
+            <div class="name">
+                <p class="blockname2" id="order">Фото <span class="pink">капкейків</span></p>
+                <p class="subtitle">все в одному місці</p>
+                <img src="{% static 'image/block2line.png' %}" alt="" class="line">
+            </div>
+            <div class="photo">
+                <a href="###"><img src="{% static 'image/leftarrow.png' %}" alt="" class="left_arrow"></a>
+                <div class="photocase" id="photo1">
+                    <a href="####" class="link"></a>
+                </div>
+                <div class="photocase" id="photo2">
+                    <a href="####" class="link"></a>
+                </div>
+                <div class="photocase" id="photo3">
+                    <a href="####" class="link"></a>
+                </div>
+                <a href="###"><img src="{% static 'image/arrow.png' %}" alt="" class="right_arrow"></a>
+            </div>
+        </div>
+    </div>
+    <div class="fifthblock">
+        <div class="container">
+            <h2 class="heading5" id="call">Замовте капкейки в нас на сайті <br> і ми передзвонимо Вам за 5 хв</h2>
+            <p class="subtitle5">для замовлення без реєстрації заповніть форму</p>
+                <label><input type="text" placeholder="Ваше ім'я" class="your_name" id="name_call"/></label>
+                <br/>
+                <label><input type="text" placeholder="Ваш телефон" class="your_phone" id="phone_call"/></label>
+            <div class="button1">
+                <button class="button" onclick="addCall()">Хочу капкейк</button>
+                <img src="{% static 'image/cupcakebutton.png' %}" alt="cupcake" class="cupcakebutton">
+                <table border="2" cellpadding="7" width="100%" id="calls">
+                        <thead>
+                        <tr>
+                            <th>Код дзвінка</th>
+                            <th>Ім'я</th>
+                            <th>Телефон</th>
+                        </tr>
+                        </thead>
+                        <tbody id="callrows"></tbody>
+                    </table>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="columns">
+                <div class="column"><img src="{% static 'image/cupcake.png' %}" alt="logo" id="footlogo"></div>
+                <div class="column"><a href="#menu" class="footerlink">Меню</a> <br> <a href="#order" class="footerlink">Як зробити замовлення?</a> <br> <a href="#photos" class="footerlink">Фото</a> <br> </div>
+                <div class="column"><span class="tnumber">+380931199063</span><br><a href="#call" class="footerlink">Замовити дзвінок</a></div>
+                <div class="column">Політика конфіденційності <br> © 2020-2020 Юліана Лаврик. Усі права застережені.</div>
+                <a href="https://www.instagram.com/yulianalavryk/" target="_blank" id="instalogo"><img src="{% static 'image/instagram.png' %}" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

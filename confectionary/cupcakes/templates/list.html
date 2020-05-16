@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confectionary</title>
+    <link rel="icon" href="{% static 'image/cake.jpg' %}" type="image/jpg">
+    <link rel="stylesheet" href="{% static 'css/list.css' %}">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="{% static 'scripts/script.js' %}"></script>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,600,700|Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+</head>
+<body>
+        <div class="table">
+            <button  class="enter_list" onclick="getDishes()">Переглянути</button>
+            <table border="1" cellpadding="5pt" id="dishes">
+                <thead>
+                <tr>
+                    <th>Назва капкейку</th>
+                    <th>Рейтинг</th>
+                    <th>Калорійність</th>
+                    <th>Ціна страви</th>
+                </tr>
+                </thead>
+                <tbody id="dishrows"></tbody>
+            </table>
+        </div>
+</body>
+</html>

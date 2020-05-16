@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confectionary</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,600,700|Open+Sans:300,300i,400,400i,600,600i,700,700i&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+</head>
+
+<body>
+    <div class="intro">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a href="../../index"><img src="{% static 'image/logo.png' %}" alt="" class="logo"></a>
+                </div>
+                <nav id="main__menu">
+                    <a href="../../../index/#menu" class="nav__link">Меню</a>
+                    <a href="../../../index/#order" class="nav__link">Як зробити замовлення?</a>
+                    <a href="../../../index/#photos" class="nav__link">Фото</a>
+                    <a href="../login.html" class="nav__link" id="sign_in">Вхід</a>
+                    <a href="../registration.html" class="nav__link" id="sign_up">Реєстрація</a>
+                </nav>
+                <div class="burger_nav">
+                    <span id="trigger" class="trigger">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </span>
+                    <div class="left-side" id="left-side">
+                    <ul id="menub" class="menub">
+                        <li><a href="index.html" class="nav__link__burger" id="homepage">Головна сторінка</a></li>
+                        <li class="burger_items"><a href="../../../index/#menu" class="nav__link__burger">Меню</a></li>
+                        <li class="burger_items"><a href="../../../index/#photos" class="nav__link__burger">Фото</a></li>
+                        <li class="burger_items"><a href="../login.html" class="nav__link__burger" id="sign_in">Вхід</a></li>
+                        <li class="burger_items"><a href="../registration.html" class="nav__link__burger" id="sign_up">Реєстрація</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="registrationblock">
+                <form action="">
+                    <div class="row">
+                        <h2 class="registration__name">Реєстрація</h2>
+
+                        <div class="col">
+                            <input class="login" type="text" name="usr" placeholder="Введіть ім'я користувача" required> <br>
+                            <input class="email" type="text" name="email" placeholder="Введіть email" required> <br>
+                            <input class="password2" type="password" name="password" placeholder="Введіть пароль" required> <br>
+                            <input class="password2" id="confpass" type="password" name="confirm_password" placeholder="Підтвердіть пароль" required>
+                            <br>
+                            <input class="enter" type="submit" value="Зареєструватися">
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="columns">
+                <div class="column"><img src="{% static 'image/cupcake.png' %}" alt="logo"></div>
+                <div class="column"><a href="../../../index/#menu" class="footerlink">Меню</a> <br> <a href="../../../index/#order" class="footerlink">Як зробити замовлення?</a> <br> <a href="../../../index/#photos" class="footerlink">Фото</a> <br> </div>
+                <div class="column"><span class="tnumber">+380931199063</span><br><a href="../../../index/#call" class="footerlink">Замовити дзвінок</a></div>
+                <div class="column">Політика конфіденційності <br> © 2020-2020 Юліана Лаврик. Усі права застережені.</div>
+                <a href="https://www.instagram.com/yulianalavryk/" target="_blank"><img src="{% static 'image/instagram.png' %}" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    <script src="{% static 'scripts/script.js' %}"></script>
+</body>
+
+</html>
